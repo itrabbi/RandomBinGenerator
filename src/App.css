@@ -60,6 +60,20 @@ button:hover {
   margin-left: auto
 }
 
+.copyright{
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.copyright a{
+  color: #333;
+}
+
+.copyright a:hover{
+  color: #0099ff;
+}
+
 @media (min-width: 768px) {
   .container {
       width:750px!important
