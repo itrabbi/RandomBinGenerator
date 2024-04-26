@@ -38,11 +38,13 @@ const RandomBinGenerator = () => {
 
     return (
         <div className="container">
-            <h2>Random Bank identification numbers Genrator and Details</h2>
+                          <a href="https://visitcount.itsvg.in">
+                    <img style={{height: "30px"}} src="https://visitcount.itsvg.in/api?id=randombingenerator&label=Total%20Vistor&color=12&pretty=true" />
+                </a>
+            <h3>Random Bank identification numbers Genrator and Details</h3>
             <button onClick={handleGenerateBin}>Generate Bin</button>
-            <h3>Random Bin: <span>{binNumber}</span></h3>
             <div id="apiResponse">
-                <h3>Bin Details:</h3>
+                <p><strong>Bin Details: {binNumber} </strong></p>
                 <p><strong>Status:</strong> <span>{binDetails.Status}</span></p>
                 <p><strong>Scheme:</strong> <span>{binDetails.Scheme}</span></p>
                 <p><strong>Type:</strong> <span>{binDetails.Type}</span></p>
@@ -51,6 +53,7 @@ const RandomBinGenerator = () => {
                 <p><strong>Country:</strong> <span>{binDetails.Country ? `${binDetails.Country.Name} (${binDetails.Country.A3})` : ''}</span></p>
                 <p><strong>Luhn:</strong> <span>{binDetails.Luhn ? 'Yes' : 'No'}</span></p>
                 <p><strong>Copyright:</strong> <span>{binDetails.Copyright}</span></p>
+                <p className='copyright'> <a href="https://me.itrabbi.com/" target='_blank'>Rabbi Hassan</a>. All rights reserved</p>
             </div>
         </div>
     );

@@ -4,14 +4,13 @@ body {
 }
 
 
-h1 {
+h3 {
   color: #333;
-  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 button {
   padding: 10px 20px;
-  margin-top: 20px;
   font-size: 17px;
   cursor: pointer;
   background-color: #007bff;
@@ -57,7 +56,9 @@ button:hover {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto
+  margin-left: auto;
+  padding-top: 7px;
+/* position: absolute; */
 }
 
 .copyright{
@@ -72,6 +73,15 @@ button:hover {
 
 .copyright a:hover{
   color: #0099ff;
+}
+
+.footer{
+  background-color: rgb(255, 255, 255);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
 }
 
 @media (min-width: 768px) {
