@@ -38,9 +38,7 @@ const RandomBinGenerator = () => {
 
     return (
         <div className="container">
-                          <a href="https://visitcount.itsvg.in">
-                    <img style={{height: "30px"}} src="https://visitcount.itsvg.in/api?id=randombingenerator&label=Total%20Vistor&color=12&pretty=true" />
-                </a>
+            <img style={{ height: "30px" }} src="https://visitcount.itsvg.in/api?id=randombingenerator&label=Total%20Vistor&color=12&pretty=true" />
             <h3>Random Bank identification numbers Genrator and Details</h3>
             <button onClick={handleGenerateBin}>Generate Bin</button>
             <div id="apiResponse">
