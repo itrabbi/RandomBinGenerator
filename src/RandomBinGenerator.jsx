@@ -14,12 +14,14 @@ const RandomBinGenerator = () => {
     });
 
     const generateRandomBin = () => {
-        const randomDigits = [5]; // First digit is always 5
-
+        const firstDigitOptions = [5];
+        const firstDigit = firstDigitOptions[Math.floor(Math.random() * firstDigitOptions.length)];
+        const randomDigits = [firstDigit];
+    
         for (let i = 0; i < 5; i++) {
             randomDigits.push(Math.floor(Math.random() * 10)); // Generate random digits 0-9
         }
-
+    
         return randomDigits.join(''); // Join digits into a string
     };
 
@@ -38,7 +40,6 @@ const RandomBinGenerator = () => {
 
     return (
         <div className="container">
-            <img style={{ height: "30px" }} src="https://visitcount.itsvg.in/api?id=randombingenerator&label=Total%20Vistor&color=12&pretty=true" />
             <h3>Random Bank identification numbers Genrator and Details</h3>
             <button onClick={handleGenerateBin}>Generate Bin</button>
             <div id="apiResponse">
@@ -51,7 +52,7 @@ const RandomBinGenerator = () => {
                 <p><strong>Country:</strong> <span>{binDetails.Country ? `${binDetails.Country.Name} (${binDetails.Country.A3})` : ''}</span></p>
                 <p><strong>Luhn:</strong> <span>{binDetails.Luhn ? 'Yes' : 'No'}</span></p>
                 <p><strong>Copyright:</strong> <span>{binDetails.Copyright}</span></p>
-                <p className='copyright'> <a href="https://me.itrabbi.com/" target='_blank'>Rabbi Hassan</a>. All rights reserved</p>
+                <p className='copyright'> <a href="https://itrabbi.com/" target='_blank'>Rabbi Hassan</a>. All rights reserved</p>
             </div>
         </div>
     );

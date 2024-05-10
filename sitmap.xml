@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:contact="http://www.example.com/schemas/contact/0.1"
+    xmlns:site="http://www.example.com/schemas/site/0.1">
+    <url>
+        <loc>https://itrabbi.com/</loc>
+        <priority>1.0</priority>
+        <lastmod>2024-04-29</lastmod> 
+    </url>
+
+    <url>
+        <loc>https://itrabbi.com/about</loc>
+        <priority>0.8</priority>
+        <lastmod>2024-04-29</lastmod> 
+    </url>
+    
+    <url>
+        <loc>https://itrabbi.com/service</loc>
+        <priority>0.8</priority>
+        <lastmod>2024-04-29</lastmod> 
+    </url>
+    
+     <url>
+        <loc>https://itrabbi.com/contact</loc>
+        <priority>0.8</priority>
+        <lastmod>2024-04-29</lastmod> 
+        <changefreq>monthly</changefreq>
+        <contact:contactinfo>
+            <contact:email>hello@itrabbi.com</contact:email>
+            <contact:phone>+880 1309-140665</contact:phone>
+            <contact:address>
+                <contact:city>Gazipur</contact:city>
+                <contact:state>Dhaka</contact:state>
+                <contact:zipcode>1207</contact:zipcode>
+                <contact:country>Bangladesh</contact:country>
+            </contact:address>
+            <contact:social>
+                <contact:github>http://github.com/itrabbi</contact:github>
+                <contact:linkedin>http://www.linkedin.com/in/itrabbi</contact:linkedin>
+                <contact:twitter>http://www.twitter.com/itrabbix</contact:twitter>
+                <contact:dev>https://dev.to/itrabbi</contact:dev>
+            </contact:social>
+        </contact:contactinfo>
+    </url>
+</urlset>
