@@ -14,7 +14,7 @@ const RandomBinGenerator = () => {
     });
 
     const generateRandomBin = () => {
-        const firstDigitOptions = [4];
+        const firstDigitOptions = [5];
         const firstDigit = firstDigitOptions[Math.floor(Math.random() * firstDigitOptions.length)];
         const randomDigits = [firstDigit];
     
